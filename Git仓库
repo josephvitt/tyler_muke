@@ -1,0 +1,62 @@
+						Git仓库
+1.初始化版本库
+-  git init
+
+2.添加文件到版本库
+- git add
+- git commit
+
+3.查看仓库状态
+- git status
+
+---分割线---
+
+4.创建SSH key
+
+ssh-keygen -t rsa -C "yourmail@example.com"
+
+cd .ssh/
+cat id_rsa.pub
+
+//测试连接成功
+ssh -T git@github.com
+
+---分割线---
+5.添加远程仓库
+
+git remote add origin git@github.com:josephvitt/tyler_muke.git
+
+git pull origin master --allow-unrelated-histories
+
+git push -u origin master
+
+---分割线---
+6.克隆仓库
+
+git clone git@github.com:josephvitt/tyler_muke.git
+
+---分割线---
+			标签管理
+1.查看所有标签 git tag
+
+2.创建标签 git tag name
+
+3.指定提交信息 git tag -a name -m "comment"
+
+4.删除标签 git tag -d name
+
+5.标签发布 git push origin name
+---分割线---
+			 分支管理
+1.git branch name  //创建分支
+
+2.git checkout name //切换分支
+
+3.git branch //查看分支
+
+4.git merge //合并分支
+
+A分支合并到B分支上去
+首先切换到B分支上，在合并A分支
+
+5.git branch -d name //删除分支
