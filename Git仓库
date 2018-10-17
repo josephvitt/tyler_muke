@@ -46,6 +46,9 @@ git clone git@github.com:josephvitt/tyler_muke.git
 4.删除标签 git tag -d name
 
 5.标签发布 git push origin name
+
+6.删除远程标签：
+git push origin :refs/tags/name(标签名) 
 ---分割线---
 			 分支管理
 1.git branch name  //创建分支
